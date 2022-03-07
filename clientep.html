@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title>Cliente Pedido</title>
+        <link rel="icon" type="image/png" href="pastel.png">
+    </head>
+    <body>
+        <div id="cabecera">
+            <div id="logo">
+                <a href="#">
+                    <img src="logo.png" alt="Dulce Corazón" width="200px">
+                </a>
+            </div>
+            <ul id="navPrincipal" class="nav clear">
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Realizar Pedido</a></li>
+            </ul>
+        </div>
+        <h1>Gracias por visitarnos, tenemos las mejores opciones para ti.</h1>
+        <p>¡Llenaremos de alegría tu corazon y paladar!</p> <br>
+        <div class="contenedor" id="menu">
+            <h1>Disfruta observando nuestro variado menú</h1>
+            <div class="contenedor">
+            <table>
+            <dl>
+                <h2>LOS SABORES QUE MANEJAMOS SON LOS SIGUEINTES...</h2>
+                <th>
+                <h3>Sabores Clásicos</h3>
+                <dt>Chocolate</dt>
+                <dd>$100.00</dd>
+                <dt>Naranja</dt>
+                <dd>$100.00</dd>
+                <dt>Oreo</dt>
+                <dd>$100.00</dd>
+                <dt>Platano</dt>
+                <dd>$100.00</dd>
+                <dt>Red Vuelvet</dt>
+                <dd>$100.00</dd>
+                <dt>Snickers</dt>
+                <dd>$100.00</dd>
+                <dt>Zanahoria</dt>
+                <dd>$100.00</dd>
+            </th>
+            <th>
+                <h3>Sabores especiales</h3>
+                <dt>Chocomenta</dt>
+                <dd>$200.00</dd>
+                <dt>Fresas con crema</dt>
+                <dd>$200.00</dd>
+                <dt>Marmolado  </dt>
+                <dd>$200.00</dd>
+                <dt>Café </dt>
+                <dd>$200.00</dd>
+                <dt>kiwi-fresa  </dt>
+                <dd>$200.00</dd>
+                <dt>Frutoa rojos  </dt>
+                <dd>$200.00</dd>
+            </th>
+            </dl>
+        </table>
+    </div>
+    <div class="contenedor">
+        <table>
+            <ol>
+                <h3>NUESTROS ADORNOS</h3>
+                <li>Drip</li>
+                <li>Cobertura mármol</li>
+                <li>Geoda</li>
+                <li>Lettering</li>
+                <li>Semi Naked</li>
+                <li>Textiruzado en 3D</li>
+            </ol>
+        </table>
+    </div>
+        </div>
+        <div class="contenedor" id="pedido">
+            <h1>NOS ALEGRA SABER QUE HEMOS CUMPLIDO CON TUS EXPECTATIVAS</h1>
+            <h3>A continuación podrás realizar tu pedio</h3>
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                <p>
+                    <label>Nombre:</label>
+                    <input type="text" id="nombre" size="40" placeholder="Escribe tu nombre completo"> <br><br>
+                    <label>Apellido:</label>
+                    <input type="text" id="apellido" size="40" placeholder="Escribe tus apellidos"> <br><br>
+                    <label>Teléfono:</label>
+                    <input type="number" id="telefono" size="40" placeholder="Escribe tu teléfono"> <br><br>
+                    <label>Correo electrónico:</label>
+                    <input type="email" id="email" size="40" placeholder="Escribe tu correo eléctronico"> <br><br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del pastel</legend>
+                <p>
+                    <h4>Selecciona la preparación de tu pastel</h4>
+                    <label>Tamaño de tu pastel:</label>
+                    <select name="tamano">
+                        <option>10 porciones</option>
+                        <option>20 porciones</option>
+                        <option>30 porciones</option>
+                        <option>40 porciones</option>
+                        <option>50 porciones</option>
+                        <option>Otras porciones...</option>
+                    </select>
+                    <br>
+                    <label>Sabor</label>
+                    <input type="radio" name="boton"> Sabores Clásicos
+                    <input type="radio" name="boton"> Sabores Especiales <br>
+                    <select name="sabor" id="sabor">
+                        <option value="">Chocolate</option>
+                        <option value="">Naranaja</option>
+                        <option value="">Oreo</option>
+                        <option value="">Platano</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Adornos</label>
+                    <input type="radio" name="boton"> Uno
+                    <input type="radio" name="boton"> Dos
+                    <input type="radio" name="boton">Tres
+                    <input type="radio" name="boton">Más...
+                    <select name="sabor" id="sabor">
+                        <option value="">Drip</option>
+                        <option value="">Geoda</option>
+                        <option value="">Semi Naked</option>
+                        <option value="">Cobertura mármol</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="">Comentario adicionales:</label>
+                    <textarea name="comentarios" id="coment" cols="30" rows="10">Escriba sus comentarios...</textarea>
+                </p>
+            </fieldset>
+            <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </body>
+</html>
